@@ -61,3 +61,7 @@ source('R/Fun/Utils/cut_continuous_variable.R')
 ### List objects in R + print their size
 source('R/Fun/Utils/list_objects_and_size.R')
 
+##########################
+### Project's functions
+##########################
+
