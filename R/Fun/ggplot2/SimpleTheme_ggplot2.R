@@ -11,7 +11,7 @@ custom_theme <-theme_update(
   #panel.grid.major = element_line( colour = "grey90", size = 0.2),
   panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),
-  strip.background = element_rect( fill = "grey80", colour = "grey50"),
+  #strip.background = element_rect( fill = "grey80", colour = "grey50"),
   
   ### Axis
   axis.line = element_line(),
@@ -29,7 +29,12 @@ custom_theme <-theme_update(
   legend.key = element_rect( colour = NA, fill = NA),
   legend.key.size = unit( 1.1, 'line'),
   legend.title = element_text( size = rel(1), face = 'bold'),
-  legend.text = element_text(size = rel(1))
+  legend.text = element_text(size = rel(1)),
+  
+  ### Facet
+  strip.text.x = element_text(size = 6),
+  strip.text.y = element_text(size = 6),
+  strip.background = element_rect(colour = "black", fill = NA)
 )
 
 textwidth = 17

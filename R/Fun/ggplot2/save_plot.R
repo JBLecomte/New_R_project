@@ -1,12 +1,17 @@
 save_plot <- function(plot,
-                      file_name,
+                      file_name = NULL,
                       path,
                       output = '',
                       scale = 1,
                       width = NULL,
                       height = NULL,
                       device = 'pdf',
-                      Save = TRUE){
+                      Save = SavePlots){
+  
+  if(is.null(file_name)){
+    file_name <- deparse(substitute(plot))
+  }
+  
   if(SavePlots){
     
     if(file.exists(paste0(path, file_name)) & EraseCoda == FALSE){

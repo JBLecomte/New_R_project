@@ -18,13 +18,9 @@ cb_palette_black <- c("#E69F00", "#56B4E9",  "#D55E00", # Gold, Light blue, Red
                       "#F0E442", "#999999", # yellow, grey
                       "#000000") # black
 
-ggplot <- function(...) ggplot2::ggplot(...) + scale_color_discrete(palette=cb_palette)
-
 cb_map_palette_blue_red <- c('#a50026','#d73027','#f46d43', '#fdae61',
                              '#fee090', '#ffffbf','#e0f3f8', '#abd9e9',
                              '#74add1','#4575b4','#313695')
-
-
 
 
 cb_map_palette_violet_green <- c('#40004b', '#762a83', '#9970ab', '#c2a5cf', 
