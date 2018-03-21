@@ -1,10 +1,14 @@
+#############################################################
+### General options
+#############################################################
+
 ## Draw all plots TRUE/FALSE
 $ShowPlots
 TRUE
 
 ## Save the figures to disk TRUE/FALSE
 $SavePlots
-FALSE
+TRUE
 
 ## if the plots are saved what kind of output is desired. Choices are '' or 'Beamer' for a presentation friendly figure
 $outputPlots
@@ -14,4 +18,10 @@ Beamer
 $make_report
 TRUE
 
+## Option to delete previous Bayesian analysis TRUE/FALSE
+$EraseCoda
+FALSE
 
+## Option to delete previous Bayesian analysis TRUE/FALSE
+$Parallel
+TRUE

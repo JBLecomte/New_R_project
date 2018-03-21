@@ -3,17 +3,18 @@
 ##########################################################
 options(install.packages.check.source = "no")
 
+
 #### Load required package, and install it if not
 list.of.packages <- c('ggplot2', 'grid', 'scales', 'gridExtra', 'latex2exp', 'GGally', 'ggmcmc', 'RColorBrewer', # plot
                       'ggmap', 'maps', 'mapdata', 'maptools', # ploting maps
-                      'tidyverse', 'dplyr', 'tidyr', # data manipulation
+                      'dplyr', 'tidyr', # data manipulation
                       'knitr', 'rmarkdown', 'captioner', 'bookdown', 'pander', # dynamic document
-                      'sp', 'rgdal', 'spatstat', 'raster', 'fields', 'rasterVis', 'rgl' #,  # spatial packages
-                      #'gpclib',
-                      #'nimble', 'coda',
+                      'sp', 'rgdal', 'spatstat',  # spatial packages
+                      # 'gpclib',
+                      'nimble', 'coda',
                       #'rjags', 'rbugs', 'R2OpenBUGS', # BUGS packages
                       #'dclone',
-                      #'snow' # paralell computing
+                      'parallel' # paralell computing
 ) 
 
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]

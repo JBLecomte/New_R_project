@@ -5,3 +5,7 @@ rm(list = ls(all = TRUE))
 
 ### Source useful package and functions
 source('R/Fun/Boot.R')
+
+### Load control file
+source('R/Load_control_file.R')
+
