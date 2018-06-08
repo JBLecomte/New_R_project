@@ -40,6 +40,9 @@ source('R/Fun/ggplot2/save_plot.R')
 ### Extract legend from a plot
 source('R/Fun/ggplot2/extract_plot_legend.R')
 
+### Extract legend from a plot
+source('R/Fun/ggplot2/print.plot.R')
+
 ##########################
 ### Other functions
 ##########################
