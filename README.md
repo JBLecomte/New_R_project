@@ -1,7 +1,7 @@
 # Template for an R project
 Contact info
 ----------------------------
-Jean-Baptiste Lecomte <lecomte.jeanbaptiste@gmail.com>
+Jean-Baptiste Lecomte <.jean.baptiste.lecomte@ifremer.fr>
 
 
 

@@ -1,11 +1,10 @@
-###########################################
+################################################################################
 ## Main R script, which runs the analysis
-###########################################
-rm(list = ls(all = TRUE))
+################################################################################
 
 ### Source useful package and functions
-source('R/Fun/Boot.R')
+source('R/Fun/boot.R')
 
 ### Load control file
-source('R/Load_control_file.R')
+source('R/load_control_file.R')
 
