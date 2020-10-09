@@ -3,13 +3,13 @@
 ################################################################################
 
 ### Load control file
-controls <- controlfile.to.rlist("Controls.ctl")
+controls <- controlfile_to_rlist("controls.ctl")
 
 #############################################################
 ### General options
 #############################################################
-show_plots <- eval(parse(text=controls$ShowPlots))
-save_plots <- eval(parse(text=controls$SavePlots))
-erase_plots <- eval(parse(text=controls$SavePlots))
-output_plots <- controls$outputPlots
-erase_coda <- eval(parse(text=controls$EraseCoda))
+show_plots <- eval(parse(text=controls$show_plots))
+save_plots <- eval(parse(text=controls$save_plots))
+erase_plots <- eval(parse(text=controls$erase_plots))
+output_plots <- controls$output_plots
+erase_tidy_data <- eval(parse(text=controls$erase_tidy_data))
