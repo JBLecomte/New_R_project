@@ -19,5 +19,5 @@ $output_plots
 Beamer
 
 ## Option to delete previous Bayesian analysis TRUE/FALSE
-$erase_coda
+$erase_tidy_data
 FALSE
