@@ -51,3 +51,4 @@ vignettes/*.pdf
 # knitr outputs
 *.html
 *.pdf
+*.docx
