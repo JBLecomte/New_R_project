@@ -1,0 +1,55 @@
+---
+title: "My title"
+author: "Sarah Connor"
+date: "updated `r Sys.Date()`"
+output: bookdown::word_document2
+---
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
+###-----------------------------------------------------------------------------
+#### Load required package, and install it if not
+list_of_packages <- c( "tidyverse", "here", "lubridate", "remotes",
+                       # plot
+                       "grid", "scales", "gridExtra", "latex2exp", "GGally", "ggthemes", "gghighlight",
+                       # plotting maps
+                       "maps", "mapdata", "maptools",
+                       # dynamic document
+                       "knitr", "rmarkdown", "captioner", "bookdown", "pander", "flextable", 
+                       # spatial packages
+                       "sf", "ggsn",
+                       "JBUtilities") 
+
+
+remotes::install_github('JBLecomte/JBUtilities', force = FALSE)
+
+JBUtilities::InstallPackages(list_of_packages)
+lapply(list_of_packages, library, character.only = TRUE)
+
+### R general option:
+options(stringsAsFactors = FALSE)
+
+### chunk option
+knitr::opts_chunk$set(cache = FALSE, results = 'asis',
+                      echo = FALSE, warning = FALSE,
+                      message = FALSE,
+                      fig.width = 12, fig.height = 8,
+                      progress = FALSE, verbose = FALSE,
+                      include = TRUE, dev = "png", autodep = FALSE)
+
+```
+
+# Introduction
+
+# Analysis
+
+To reference a figure \@ref(fig:plot_1), for a table \@ref(tab:tab_1)
+
+```{r plot_1, fig.cap = "Plot 1"}
+
+```
+
+```{r tab_1, fig.cap = "Tab 1"}
+
+```
+
+# Conclusion
