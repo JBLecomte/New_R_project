@@ -80,6 +80,7 @@ source(here("R/Fun/Utils/list_objects_and_size.R"))
 ###-----------------------------------------------------------------------------
 ### Project's functions
 ###-----------------------------------------------------------------------------
-
-invisible(purrr::map(paste0(c("R/fun/project/"),
-                            list.files(c("R/fun/project"), "*.R$")), source))
+if(length(list.files(paste0(c("R/fun/project/")))) > 0) {
+  invisible(purrr::map(paste0(c("R/fun/project/"),
+                              list.files(c("R/fun/project"), "*.R$")), source))
+}
