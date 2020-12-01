@@ -45,9 +45,6 @@ source(here("R/Fun/ggplot2/ggplot2_summary_fct_boxplot.R"))
 ### Palette
 source(here("R/Fun/ggplot2/my_palette.R"))
 
-### Palette
-source(here("R/Fun/ggplot2/save_plot.R"))
-
 ### Extract legend from a plot
 source(here("R/Fun/ggplot2/extract_plot_legend.R"))
 
