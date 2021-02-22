@@ -47,6 +47,8 @@ vignettes/*.pdf
 *.xls
 *.xlsx
 *.xlk
+*.csv
+*.txt
 
 # knitr outputs
 *.html
